@@ -6,6 +6,25 @@ return [
                 'flatrate' => [
                     'title' => 'Express Shipping'
                 ]
+            ],
+            'general' => [
+                'locale' => [
+                    'timezone' => 'Australia/Sydney',
+                    'code' => 'en_AU'
+                ],
+                'country' => [
+                    'default' => 'AU'
+                ],
+                'store_information' => [
+                    'country_id' => 'AU'
+                ]
+            ],
+            'currency' => [
+                'options' => [
+                    'base' => 'AUD',
+                    'default' => 'AUD',
+                    'allow' => 'AUD'
+                ]
             ]
         ]
     ],
