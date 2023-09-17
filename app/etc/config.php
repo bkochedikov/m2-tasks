@@ -1,5 +1,14 @@
 <?php
 return [
+    'system' => [
+        'default' => [
+            'carriers' => [
+                'flatrate' => [
+                    'title' => 'Express Shipping'
+                ]
+            ]
+        ]
+    ],
     'modules' => [
         'Magento_Store' => 1,
         'Magento_Config' => 1,
