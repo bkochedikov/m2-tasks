@@ -52,7 +52,7 @@ class AddSizeChartProductAttribute implements DataPatchInterface, PatchRevertabl
             \Magento\Catalog\Model\Product::ENTITY,
             'size_chart',
             [
-                'type' => 'int',
+                'type' => 'varchar',
                 'label' => 'Size Chart',
                 'input' => 'select',
                 'source' => \Kochedykov\ProductAttribute\Model\Product\Attribute\Source\SizeChart::class,
@@ -61,7 +61,6 @@ class AddSizeChartProductAttribute implements DataPatchInterface, PatchRevertabl
                 'backend' => '',
                 'sort_order' => '30',
                 'global' => ScopedAttributeInterface::SCOPE_GLOBAL,
-                'default' => null,
                 'visible' => true,
                 'user_defined' => true,
                 'searchable' => true,
@@ -77,7 +76,6 @@ class AddSizeChartProductAttribute implements DataPatchInterface, PatchRevertabl
                 'is_filterable_in_grid' => false,
             ]
         );
-
         $this->moduleDataSetup->getConnection()->endSetup();
     }
 
@@ -104,7 +102,6 @@ class AddSizeChartProductAttribute implements DataPatchInterface, PatchRevertabl
     public static function getDependencies(): array
     {
         return [
-
         ];
     }
 }
