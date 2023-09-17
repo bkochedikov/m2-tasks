@@ -28,6 +28,7 @@ class SizeChart extends AbstractSource
     public function getAllOptions(): array
     {
         $cmsBlocks = $this->getCmsBlocks();
+        $this->_options[] = ['value' => '0', 'label' => 'None'];
         foreach ($cmsBlocks as $block) {
             $this->_options[] = ['value' => $block->getIdentifier(), 'label' => $block->getTitle()];
         }
